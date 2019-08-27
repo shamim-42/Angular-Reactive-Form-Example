@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Be sure that  you have installed the npm
+2. Install the angular cli via the command `npm install -g @angular/cli`
+3. Now install the node modules and other dependancies via the command `npm install`
+4. Finally run the app via `ng serve`
+5. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
