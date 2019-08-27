@@ -3,7 +3,12 @@
     <form [formGroup]="StudentDetailsForm" (ngSubmit)="onSubmit()">
         <input type="text" formControlName="firstName" placeholder="First Name" />
         <input type="text" formControlName="lastName" placeholder="Last Name">
-        <input type="number" formControlName="roll" placeholder="Roll">
+        <input type="number" formControlName="roll" placeholder="Roll">        
+        <div [formGroupName]="address">
+            <input type="text" formControlName="district" placeholder="District" />
+            <input type="text" formControlName="thana" placeholder="Thana" />
+            <input type="number" formControlName="mob" placeholder="Mobile" />
+        </div>
         <input type="submit" value="Submit">
     </form>
 </label>

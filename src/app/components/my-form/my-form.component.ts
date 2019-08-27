@@ -11,11 +11,16 @@ export class MyFormComponent {
   StudentDetailsForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
-    roll: new FormControl(0)    
+    roll: new FormControl(''),
+    address: new FormGroup({
+      district: new FormControl(''),
+      thana: new FormControl(''),
+      mob: new FormControl('')
+    }) 
   });
 
   onSubmit = () => {
-    console.warn(this.StudentDetailsForm.value)
+    console.warn(this.StudentDetailsForm.value);
   }
 
 }
