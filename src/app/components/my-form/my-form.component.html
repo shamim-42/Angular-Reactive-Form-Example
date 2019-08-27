@@ -1,0 +1,7 @@
+<h3>My Form</h3>
+<label>
+    <input type="text" [formControl]="name" placeholder="Name" />
+    <input type="text" [formControl]="email" placeholder="Email">
+</label>
+<p><b>Name</b> field: {{ name.value }} </p>
+<p><b>Email</b> field: {{ email.value }} </p>
