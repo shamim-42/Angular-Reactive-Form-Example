@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { from } from 'rxjs';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-my-form',
@@ -9,7 +8,14 @@ import { from } from 'rxjs';
 })
 export class MyFormComponent {
 
-  name = new FormControl('');
-  email = new FormControl('');
+  StudentDetailsForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    roll: new FormControl(0)    
+  });
+
+  onSubmit = () => {
+    console.warn(this.StudentDetailsForm.value)
+  }
 
 }

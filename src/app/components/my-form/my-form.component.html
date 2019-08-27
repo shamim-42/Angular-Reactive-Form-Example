@@ -1,7 +1,9 @@
 <h3>My Form</h3>
 <label>
-    <input type="text" [formControl]="name" placeholder="Name" />
-    <input type="text" [formControl]="email" placeholder="Email">
+    <form [formGroup]="StudentDetailsForm" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="firstName" placeholder="First Name" />
+        <input type="text" formControlName="lastName" placeholder="Last Name">
+        <input type="number" formControlName="roll" placeholder="Roll">
+        <input type="submit" value="Submit">
+    </form>
 </label>
-<p><b>Name</b> field: {{ name.value }} </p>
-<p><b>Email</b> field: {{ email.value }} </p>
